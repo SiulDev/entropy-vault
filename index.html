@@ -16,12 +16,14 @@
       rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   </head>
-
+  <!-- body -->
   <body
     class="bg-background-light dark:bg-background-dark font-display text-slate-200 min-h-screen selection:bg-primary/30">
-    <nav class="border-b border-white/5 bg-background-dark/80 backdrop-blur-md sticky top-0 z-50">
-      <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+    <!-- Header -->
+    <header class="border-b border-white/5 bg-background-dark/80 backdrop-blur-md sticky top-0 z-50 select-none">
+      <nav class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <div class="flex items-center gap-3">
+          <!-- Logo Shield -->
           <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center glow-primary">
             <span class="material-icons text-white text-lg">shield</span>
           </div>
@@ -35,10 +37,12 @@
             <span class="text-xs font-medium text-emerald-500 uppercase tracking-widest">System Secure</span>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
+    <!-- main -->
     <main class="max-w-5xl mx-auto px-6 py-12">
+      <!-- Password Section -->
       <div class="glass rounded-xl p-8 mb-8 relative overflow-hidden">
         <div
           class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary/50 to-transparent"></div>
@@ -82,7 +86,7 @@
           </div>
         </div>
       </div>
-
+      <!-- Stats Section -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
         <div class="glass rounded-lg p-6 flex flex-col items-center text-center hover:bg-white/5 transition-colors">
           <span class="material-icons text-primary/60 mb-2">analytics</span>
@@ -106,7 +110,7 @@
           <span class="text-[10px] text-slate-500 mt-1">NIST Compliant</span>
         </div>
       </div>
-
+      <!-- Parameters Section -->
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div class="lg:col-span-2 glass rounded-lg p-8">
           <h3 class="text-sm font-bold text-white uppercase tracking-widest mb-8 flex items-center gap-2">
@@ -194,14 +198,15 @@
       </div>
     </main>
 
-    <footer class="mt-auto border-t border-white/5 py-8">
+    <!-- footer -->
+    <footer class="mt-auto border-t border-white/5 py-8 select-none">
       <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
         <div class="flex items-center gap-6 text-[10px] font-semibold text-slate-500 uppercase tracking-widest">
-          <span>Algorithm: Custom CSPRNG</span>
-          <span>Entropy: Shannon Bits</span>
+          <span>Algorithm: Custom</span>
+          <span>Entropy: Bits</span>
           <span>Mode: Local Secure</span>
         </div>
-        <div class="text-[10px] text-slate-600">© 2026 Entropy Vault. No data leaves your browser.</div>
+        <div class="text-[10px] text-slate-600">© 2026 Entropy Vault. Created by Siul</div>
       </div>
     </footer>
 
