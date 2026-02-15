@@ -1,0 +1,50 @@
+/* Efecto de Vidrio Esmerilado (Glassmorphism) */
+.glass {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Efectos de Resplandor (Glows) */
+.glow-emerald {
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.2);
+}
+
+.glow-primary {
+  box-shadow: 0 0 20px rgba(19, 127, 236, 0.3);
+}
+
+/* --- Personalización del Slider (Input Range) --- */
+/* Tailwind tiene plugins para esto, pero hacerlo manual da más control visual */
+input[type="range"] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%;
+  background: transparent; /* Otherwise white in Chrome */
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #1e293b;
+  height: 6px;
+  border-radius: 3px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: #137fec;
+  margin-top: -6px; /* Centra el thumb en el track */
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(19, 127, 236, 0.5);
+  transition: transform 0.1s;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
