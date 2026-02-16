@@ -20,6 +20,26 @@ tailwind.config = {
   plugins: [
     function ({ addComponents, theme }) {
       addComponents({
+        ".stats-card": {
+          backgroundColor: "rgba(15, 23, 42, 0.6)",
+          backdropFilter: "blur(12px)",
+          webkitBackdropFilter: "blur(12px)",
+          border: "1px solid rgba(255, 255, 255, 0.1)",
+          borderRadius: "0.5rem",
+          padding: "1.5rem",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          textAlign: "center",
+          userSelect: "none",
+          transitionProperty: "all",
+          transitionDuration: "300ms",
+          transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
+          "&:hover": {
+            backgroundColor: "rgba(20, 20, 20, 0.05)",
+            boxShadow: `0 0 15px ${theme("colors.primary")}33`
+          }
+        },
         ".option-card": {
           display: "flex",
           alignItems: "center",
